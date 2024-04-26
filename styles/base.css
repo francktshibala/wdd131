@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+:root {
+    --primary-color: #034078;
+    --secondary-coloor: #0A1128;
+    --accent1-color: #1282A2;
+    --accent2-color: #FEFCFB;
+
+
+    --heading-font: DM Serif Display, serif;
+    --paragraph-font: open sans;
+
+    --nav-background-color: #001F54;
+    --nav-link-color: #FEFCFB;
+    --nav-hover-link-color: #001F54;
+    --nav-hover-background-color: #FEFCFB;
+}
+  body {
+    display: block;
+    max-width: 960px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+
+nav ul {
+    font-family: var(--heading-font);
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-coloor);
+    
+    
+    
+  }
+
+  nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+
+}
+ 
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+    
+}
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+}
+
+
+
+
+.capital {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    text-decoration-line: underline;
+    
+}
+
+.profile {
+    
+  float: right;
+  margin-bottom: 20px;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #034078 ; 
+   
+   
+}
+p {
+    font-family: var(--paragraph-font);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 0;
+    color: var(--accent2-color);
+    text-align: center;
+}
