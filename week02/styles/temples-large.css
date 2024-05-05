@@ -11,13 +11,20 @@ main > div {
   display: none; /* hide hamburger button */
 }
 
-.navigation {
-  flex-direction: row;
-}
+
 
 .navigation a {
   display: block;
   flex: 1 1 100%;
+  
+  
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: var(--heading-font);
+  padding: 1rem;
+  margin: 0;}
 }

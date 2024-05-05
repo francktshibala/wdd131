@@ -33,8 +33,32 @@ h1 {
 h2 {
     color: var(--accent1-color);
 }
+    
+   
+    #menu .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+    }
+    #menu.open .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu.open .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    
+    .close-icon {
+        display: none;
+    } 
 
-#menu {
+    
+ #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -44,27 +68,12 @@ h2 {
 	________;
 }
 
-#menu::before {
-	content: "☰";
-}
 
-#menu.open::before {
-	content: "❎";
-}
-
-
-
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    font-family: var(--heading-font);
-    padding: 1rem;
-    margin: 0;
-}
 
 nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
     color: var(--nav-link-color);
     text-decoration: none;
 }
@@ -73,6 +82,7 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
 
 main  {
     display: block;
