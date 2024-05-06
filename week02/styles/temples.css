@@ -28,6 +28,7 @@ header {
 
 h1 {
     color: var(--accent2-color);
+    font-family: var(--heading-font);
 }
 
 h2 {
@@ -35,58 +36,56 @@ h2 {
 }
     
    
-    #menu .icon-bar {
+    #menu {
         display: block;
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px auto;
-    }
-    #menu.open .icon-bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    #menu.open .icon-bar:nth-child(2) {
-        opacity: 0;
-    }
-    #menu.open .icon-bar:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: var(--primary-color);
+        color: var(--accent2-color);
+        
     }
     
-    
-    .close-icon {
+    #menu::before {
+        content: "☰";;
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .navigation li {
         display: none;
-    } 
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: right;
+        text-decoration: none;
+        color: var(--accent2-color);
+        font-weight: 700;
+       
+    }
+
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: var(--accent1-color);
+    }
 
     
- #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: _________,
-	________,
-	________;
-}
 
-
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    color: var(--nav-link-color);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-
-main  {
-    display: block;
-  }
+    .show li {
+        display: block;
+    }
+    
+    #menu.show::before{
+        content: "X";
+    }
+    
 
 body {
     max-width: 960px;
@@ -105,4 +104,5 @@ footer {
     margin: 0;
     color: var(--accent2-color);
     text-align: center;
+    font-family: var(--heading-font);
 }

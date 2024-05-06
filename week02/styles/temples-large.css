@@ -11,13 +11,15 @@ main > div {
   display: none; /* hide hamburger button */
 }
 
+.navigation li {
+  display: block;
+  flex: 1 1 100%;
+}
 
 
 .navigation a {
-  display: block;
-  flex: 1 1 100%;
   
-  
+  text-align: center;
 }
 
 nav ul {
