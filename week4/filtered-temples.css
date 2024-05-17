@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+:root {
+    --primary-color: #034078;
+    --secondary-coloor: #0A1128;
+    --accent1-color: #1282A2;
+    --accent2-color: #FEFCFB;
+
+
+    --heading-font: DM Serif Display, serif;
+    --paragraph-font: open sans;
+
+    --nav-background-color: #001F54;
+    --nav-link-color: #FEFCFB;
+    --nav-hover-link-color: #001F54;
+    --nav-hover-background-color: #FEFCFB;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--accent1-color);
+}
+    
+   
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: var(--primary-color);
+        color: var(--accent2-color);
+        
+    }
+    
+    #menu::before {
+        content: "☰";;
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: right;
+        text-decoration: none;
+        color: var(--accent2-color);
+        font-weight: 700;
+       
+    }
+
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: var(--accent1-color);
+    }
+
+    
+
+    .show li {
+        display: block;
+    }
+    
+    #menu.show::before{
+        content: "X";
+    }
+    
+
+body {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+figcaption {
+    color: var(--accent1-color)
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 0;
+    color: var(--accent2-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
