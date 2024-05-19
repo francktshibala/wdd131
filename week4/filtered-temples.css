@@ -88,10 +88,11 @@ h2 {
     
 
 body {
-    max-width: 960px;
+    max-width: 100%;
     text-align: center;
     margin: 0 auto;
     background-color: var(--accent2-color);
+    
 }
 
 .temple-card {
