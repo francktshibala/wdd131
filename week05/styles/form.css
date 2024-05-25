@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+:root {
+    --primary-color: #058C42;
+    --secondary-coloor: #04471C;
+    --accent1-color: #020202;
+    --accent2-color: #FEFCFB;
+
+
+    --heading-font: Bree Serif, serif;
+    --paragraph-font: serif;
+
+   
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+
+h1 {
+    background-color: var(--secondary-coloor);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    padding: 1rem;
+    
+
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--secondary-coloor);
+    font-weight: 700;
+   
+
+}
+
+.whole-forme{
+    display:grid;
+}
+
+.whole-forme label{
+    width: 100%;
+    text-align: left;
+}
+
+.legend {
+    font-family: var(--heading-font);
+    text-align: left;
+}
+
+.star-ratings{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+
+.star-ratings input{
+    display:none;
+}
+button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+
+button[type="submit"]{
+    padding: .7rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    border-color: var(--secondary-coloor);
+    border-radius: 5px;
+    width: 100%;
+    font-size: larger;
+    
+}
+
+
+form input[type="radio"]{
+    display: inline;
+    padding: 1rem;
+    max-width: 100%;
+    row-gap: 1px;
+    
+}
+
+#options{
+    display: grid;
+    gap: .3rem 0;
+    padding: .3rem 0;
+    
+}
+
+input[type="date"], 
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: .9rem .7rem;
+    margin: 0 0 1rem 0;
+    font-family: var(--paragraph-font);
+    border-radius: 5px;
+}
+
+input[type="date"]:valid, 
+input[type="text"]:valid,
+select:valid,
+textarea:valid {
+    background-color: var(--accent2-color);
+}
+
+.required::before{
+    content: "* ";
+}
+
+
+input[type="date"]:invalid, 
+input[type="text"]:invalid,
+select:invalid,
+textarea:invalid {
+    background-color: var(--accent2-color)
+}
+fieldset{
+    border:none;
+}
+
+
+
+footer {
+    background-color: var(--secondary-coloor);
+    color: var(--accent2-color);
+    padding: 1rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
