@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - News For Everyone - Franck Tshibala</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Franck Tshibala - An interactive and dynamic page about me ">
+        <meta name="author" content="Franck Tshibala">
+        <link rel="stylesheet" href="styles/news-for-everyone-large.css">
+        <link rel="stylesheet" href="styles/news-for-everyone.css">
+        
+        <script src="scripts/news-for-everyone.js" defer></script>
+    </head>
+
+<body>
+    <header>
+        
+        <figure>
+            <img src="images/logo-webp.webp" alt="logo">
+            <figcaption>News For Everyone</figcaption>
+
+        </figure>
+        
+        
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Begginer</a></li>
+                <li><a href="#">Intermediate </a></li>
+                <li><a href="#">Advanced </a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/herro-large.webp" media="(min-width: 1500px)">
+                <img src="images/herro-small.webp" alt="hero img" width="400" height="400">
+            </picture>
+        </div>
+        
+            <form>
+                <fieldset>
+                    
+                <div class="form-item">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="column1">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="pet">Please subscribe me to the monthly newsletter</label>
+                    <div class="column1">
+                    <input type="checkbox" id="pet" name="pet">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <button type="submit">Subscribe</button>
+                </fieldset>
+    
+            </form>
+        
+        
+    </main>
+
+    <footer>
+        <p id="copyright-year"></p>
+
+        <p>&copy; 2024 ⚽ <span id="currentYear"></span> Franck Tshibala, Salt Lake City ⚽</p>
+        <p id="lastModified">Last Modification: 05/25/2024 15:33:18</p>
+    </footer>
+    
+</body>
+</html>
