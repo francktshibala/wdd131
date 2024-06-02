@@ -1,8 +1,8 @@
 @media screen and (min-width: 500px) {
 
     main > div {
-        background-color: blue;
-        color: white;
+        background-color: red;
+        color: red;
     }
     
     main {

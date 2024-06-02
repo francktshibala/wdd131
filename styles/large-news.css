@@ -1,0 +1,47 @@
+@media (min-width: 37.5rem){ 
+    
+    
+    .navigation a { 
+        text-align: center;
+      }
+
+    .navigation li  {
+
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        font-family: var(--heading-font);
+        margin: 0;
+        color: #FEFCFB;
+    }
+
+    #menu {
+      display: none;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 1rem;
+      margin: 0;
+      color: var(--accent2-color);
+      text-align: center;
+      font-family: var(--heading-font);
+      padding: 4rem;
+   }
+
+    
+
+}

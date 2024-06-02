@@ -1,0 +1,84 @@
+
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #003f88;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+		nav {
+		    background-color: navy;
+		    color: #fff;
+		    text-align: center;
+		    padding: 10px;
+		    display: flex;
+		    justify-content: space-around;
+		}
+		
+		nav a {
+		    color: #fff;
+		    text-decoration: none;
+		    padding: 10px 0;
+		    transition: background-color 0.3s; /* Adding smooth transition */
+			flex: 1;
+		}
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+ /* Responsive CSS */
+ @media screen and (max-width: 600px) { 
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+        display: block;
+    }
+}
+
+/* Additional CSS for card layout */
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for positioning */
+}
+
+/* Additional CSS for tabs */
+.tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #003f88;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+    text-align: center; /* Center align the text */
+}
+.card p {
+   margin-top: 40px; /* Adjusted to accommodate the tab */
+    padding-top: 40px; /* Added to separate content from tab */
+}    
+

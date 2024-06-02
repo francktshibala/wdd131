@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - News For Everyone - Franck Tshibala</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Franck Tshibala - An interactive and dynamic page about me ">
+        <meta name="author" content="Franck Tshibala">
+        <link rel="stylesheet" href="styles/news.css">
+        <link rel="stylesheet" href="styles/large-news.css">
+        <script src="scripts/news.js" defer></script>
+    </head>
+
+<body>
+    <header>
+        <h1>News For Everyone
+            
+        </h1>
+        <a id="menu" href="#"></a>
+        <nav>
+           
+            <ul class="navigation">
+            
+                <li><a  href="#" id="home-link">Home</a></li>
+                <li><a  href="#" id="old-link">About</a></li>
+                <li><a  href="#" id="new-link">Begginer</a></li>
+                <li><a  href="#" id="large-link">Intermediate</a></li>
+                <li><a  href="#" id="small-link">Advanced</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/logos-webp.webp" alt="">
+    </header>
+    
+
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/herro-large.webp" media="(min-width: 1500px)">
+                <img src="images/herro-small.webp" alt="hero img" width="400" height="400">
+            </picture>
+        </div>
+
+        <div>
+            <h2>Join Our NewsLetter</h2>
+        
+        <form id="product-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+    
+            <label for="email">Email: (required)</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label>Select a product:</label><br>
+            <input type="radio" id="product1" name="product" value="Product 1">
+            <label for="product1">Begginer</label><br>
+    
+            <input type="radio" id="product2" name="product" value="Product 2">
+            <label for="product2">Intermediate</label><br>
+    
+            <input type="radio" id="product3" name="product" value="Product 3">
+            <label for="product3">Advanced</label><br><br>
+    
+            <button type="submit">Join The NewsLetter</button>
+        </form>
+
+    </div>
+        
+        
+    </main>
+
+    <footer>
+        <p id="copyright-year"></p>
+
+        <p>&copy; 2024 ⚽ <span id="currentYear"></span> Franck Tshibala, Salt Lake City ⚽</p>
+        <p id="lastModified">Last Modification: 05/01/2024 15:33:18</p>
+    </footer>
+    
+</body>
+</html>

@@ -32,12 +32,9 @@ header {
     
 }
 
-figcaption {
+h1 {
    color: var(--accent2-color);
    font-family: var(--heading-font);
-   padding: 20px;
-   font-weight: bold;
-   font-size: larger;
 }
 
 #menu {
@@ -48,8 +45,8 @@ figcaption {
    padding: .5rem .75rem;
    background-color: var(--primary-color);
    color: var(--accent2-color);
+   
 }
-
 
 #menu::before {
    content: "☰";;
@@ -59,14 +56,11 @@ figcaption {
    list-style: none;
    margin: 0 auto;
    max-width: 760px;
-   
 }
-
 
 .navigation li {
    display: none;
 }
-
 
 .navigation a {
    display: block;
@@ -74,18 +68,15 @@ figcaption {
    text-align: right;
    text-decoration: none;
    color: var(--accent2-color);
-   font-weight: bold;
-   font-family: var(--paragraph-font);
-   font-size: large;
+   font-weight: 700;
+   font-family: var(--heading-font);
   
 }
 
 .navigation a:hover, navigation a:active {
-   color: white;
-   background-color: var(--accent3-color);
+   color: var(--accent3-color);
+   background-color: var(--accent1-color);
 }
-
-
 
 .show li {
    display: block;
@@ -96,16 +87,16 @@ figcaption {
 }
 
 
+
 body {
   
    max-width: 1000px;
    text-align: center;
+   margin: 0 auto;
+   background-color: var(--accent1-color);
 }
 
-/* main {
-   display: block;
-   
-} */
+
 
 form {
    margin-top: 5px;
@@ -123,4 +114,52 @@ footer {
    color: var(--accent2-color);
    text-align: center;
    font-family: var(--heading-font);
+}
+
+h2 {
+   text-align: center;
+   font-family: var(--heading-font);
+   color: var(--accent2-color);
+}
+
+form {
+   max-width: 400px;
+   margin: 0 auto;
+   border: 1px solid #003F88;
+   padding: 20px;
+   border-radius: 5px;
+   background-color: var(--primary-color);
+}
+
+label {
+   display: inline-block;
+   width: 100px;
+   font-weight:400;
+   color: var(--accent2-color);
+   font-family: var(--heading-font);
+}
+
+input[type="text"],
+input[type="email"] {
+   width: 250px;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+input[type="radio"] {
+   margin-right: 5px;
+}
+
+button[type="submit"] {
+   display: block;
+   margin: 20px auto 0;
+   padding: 10px 40px;
+   background-color: var(--accent1-color);
+   color: var(--accent2-color);
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: 500;
+   font-family: var(--heading-font);
+   font-size: larger;
 }
