@@ -23,3 +23,13 @@ form.addEventListener('submit', function(event) {
         alert('Please select a product.');
     }
 });
+
+// DATE AND TIME 
+// 
+const currentYear = new Date().getFullYear();
+document.getElementById('copyright-year').textContent = currentYear;
+
+
+const lastModified = document.lastModified;
+document.getElementById('last-modified').textContent = lastModified;
+

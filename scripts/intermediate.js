@@ -8,7 +8,6 @@ hambutton.addEventListener('click', () => {
   hambutton.classList.toggle('show');
 });
 
-
 // DATE AND TIME 
 // 
 const currentYear = new Date().getFullYear();

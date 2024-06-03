@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+        --primary-color: #003F88;
+         --secondary-coloor: #00509D;
+        --accent1-color: #0077B6;
+        --accent2-color: #FEFCFB;
+        --accent3-color: #FDC500;
+        
+        --nav-background-color: #00296B;
+        --nav-link-color: #FEFCFB;
+        --nav-hover-link-color: #001F54;
+        --nav-hover-background-color: #FEFCFB;
+
+        --heading-font: Bree Serif, serif;
+        --paragraph-font: serif;
+
+   
+}
+
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--accent3-color);
+    font-family: var(--heading-font);
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    
+}
+
+#menu::before {
+    content: "☰";;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    text-decoration: none;
+    color: var(--accent3-color);
+    font-weight: 700;
+    font-family: var(--heading-font);
+   
+}
+
+.navigation a:hover, navigation a:active {
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before{
+    content: "X";
+}
+
+body {
+    
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+main {
+    display: grid;
+    text-align: center;
+}
+
+.square {
+    width: 400px;
+    height: 200px;
+    align-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #FEFCFB;
+    font-family: var(--heading-font);
+    font-size:medium;
+    
+
+}
+
+main a {
+
+    text-decoration: none;
+    padding: 5px ;
+    background-color: #FDC500;
+    font-family: var(--heading-font);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px;
+    color: var(--accent3-color);
+    text-align: center;
+    font-size: large;
+    font-family: var(--heading-font);
+
+}
+
+
