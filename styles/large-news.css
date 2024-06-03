@@ -42,6 +42,27 @@
       padding: 4rem;
    }
 
+   .menu a {
+    width: 400px;
+    padding: 10px;
+    display: grid;
+    text-decoration: none;
+    color: #FEFCFB;
+    background-color:#003F88 ;
+    margin: 5px;
+    font-family:Bree Serif, serif;
+    font-size: larger;
+}
+#description {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003F88;
+    width: 200px;
+    font-family:  Serif, serif;
+    font-size: larger;
+    color: #FEFCFB;
+}
+
     
 
 }
